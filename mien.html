@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/swiper.min.css" />
+		<link rel="stylesheet" href="css/animate.min.css" />
+		<link rel="stylesheet" href="css/mien.css" />
+		<script>
+			(function(doc, win) {
+				var docEl = doc.documentElement,
+					resizeEvt = "orientationchange" in window ? "orientationchange" : "resize",
+					recalc = function() {
+						var clientWidth = docEl.clientWidth;
+						if(!clientWidth) return;
+						if(clientWidth > 750) {
+							clientWidth = 750;
+						}
+						docEl.style.fontSize = 100 * (clientWidth / 750) + "px";
+					};
+				// Abort if browser does not support addEventListener
+				if(!doc.addEventListener) return;
+				win.addEventListener(resizeEvt, recalc, false);
+				doc.addEventListener("DOMContentLoaded", recalc, false);
+			})(document, window);
+		</script>
+	</head>
+
+	<body>
+		<div class="swiper-container">
+			<div id="music" class="music">
+		        <a class="music-btn play"></a>
+		    </div>
+			<audio id="audio" class="music-url" src="images/music.mp3" preload loop="loop"></audio>
+			<div id="next"></div>
+			<div class="swiper-wrapper">
+				<div class="swiper-slide swiper-no-swiping page1">
+					<img class="bg" src="images/erer.png" alt="">
+					<ul class="first">
+						<li class="door-bg"><img src="images/door_bg.png" alt=""></li>
+						<li class="left-door"><img src="images/left_door.png" alt=""></li>
+						<li class="right-door"><img src="images/right_door.png" alt=""></li>
+						<li class="top-pic">
+							<img src="images/top_pic.png" alt="">
+							<div class="top-txt">
+								<img class="top-txt-img1" style="margin-left: .4rem;" src="images/top_txt_1.png" alt="">
+								<img class="top-txt-img2" style="margin-left: .2rem;" src="images/top_txt_2.png" alt="">
+								<img class="top-txt-img3" style="margin-left: .05rem;" src="images/top_txt_3.png" alt="">
+								<img class="top-txt-img4" style="margin-left: .05rem;" src="images/top_txt_4.png" alt="">
+							</div>
+						</li>
+						<li class="left-pic">
+							<img src="images/left_pic.png" alt="">
+							<div class="pic-txt">
+								<p class="pic-txt-01">一</p>
+								<p class="pic-txt-02">年</p>
+								<p class="pic-txt-03">四</p>
+								<p class="pic-txt-04">季</p>
+								<p class="pic-txt-05">行</p>
+								<p class="pic-txt-06">好</p>
+								<p class="pic-txt-07">运</p>
+							</div>
+						</li>
+						<li class="right-pic">
+							<img src="images/right_pic.png" alt="">
+							<div class="pic-txt">
+								<p class="pic-txt-08">八</p>
+								<p class="pic-txt-09">方</p>
+								<p class="pic-txt-10">财</p>
+								<p class="pic-txt-11">宝</p>
+								<p class="pic-txt-12">进</p>
+								<p class="pic-txt-13">家</p>
+								<p class="pic-txt-14">门</p>
+							</div>
+						</li>
+						<li class="left-child"><img src="images/left_child.png" alt=""></li>
+						<li class="right-child"><img src="images/right_child.png" alt=""></li>
+					</ul>
+					<img class="redPacket" src="images/56a830e6d6619.png" alt="" />
+					<i id="open"></i>
+				</div>
+				<div class="swiper-slide page2">
+					<img class="page2-img img1" src="images/1485235548704012266.jpg" />
+					<img class="page2-img img2" src="images/510387228745148419.jpg" />
+					<img class="page2-img img3" src="images/1485231748704012266.jpg" />
+					<img class="page2-img img4" src="images/1484805228280095592.jpg" />
+					<img class="page2-img img5" src="images/1485236438902070076.jpg" />
+					<img class="page2-img img6" src="images/453119547596958257.jpg" />
+					<img class="page2-img img7" src="images/322717510288397979.jpg" />
+				</div>
+				<div class="swiper-slide page3">
+					<img class="page3-flower1" src="images/flower.png" />
+					<img class="page3-flower2" src="images/flower.png" />
+					<img class="page3-flower3" src="images/flower.png" />
+					<img class="page3-flower4" src="images/meihua.png" />
+					<img class="page3-text" src="images/text2.png" />
+					<ul>
+						<li class="animated bounceInLeft">律回春晖渐，万象始更新。</li>
+						<li class="animated bounceInRight">我们告别成绩斐然的2016，</li>
+						<li class="animated bounceInLeft">迎来充满希望的2017。</li>
+						<li class="animated bounceInRight">值此新春到来之际，想说：</li>
+					</ul>
+				</div>
+
+				<div class="swiper-slide page4">
+					<img class="year" src="images/happynewyear.png" />
+					<img class="year" src="images/happynewyear.png" />
+					<img class="page3-img" src="images/1964a1c7-332a-470b-a237-4ce91ad329ab@264w_70Q_1an.gif" />
+
+					<div class="wrap">
+						<div class="clock">
+							<div class="number top">
+								12
+							</div>
+							<div class="number bottom">
+								6
+							</div>
+							<div class="number left">
+								9
+							</div>
+							<div class="number right">
+								3
+							</div>
+							<div class="inner"></div>
+							<div class="center"></div>
+							<div class="hand minute dropshadow"></div>
+							<div class="hand hour"></div>
+							<div class="hand second"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<script src="js/jquery-1.11.0.js"></script>
+		<script src="js/swiper.jquery.min.js"></script>
+		<script src="js/mien.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			function audioAutoPlay(id){
+			    var audio = document.getElementById(id);
+			    audio.play();
+			    document.addEventListener("WeixinJSBridgeReady", function () {
+			            audio.play();
+			    }, false);
+			}
+			audioAutoPlay("audio");
+		</script>
+	</body>
+
+</html>
